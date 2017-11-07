@@ -38,4 +38,34 @@ $line-height:                 1.375em !default;
     line-height: $line-height;
     color: currentColor;
   }
+
+  &--feedbeck-top {
+    legend {
+      font-size: 18px;
+      font-weight: 400;
+      span {
+        color: #8bdf04;
+      }
+    }
+    .btn {
+      width: 100%;
+    }
+  }
+
+  &--feedbeck-bottom {
+    @include row;
+    max-width: 960px;
+    margin: auto;
+
+    .form__part {
+      @include make-col(4);
+    }
+    .field-actions {
+      margin: 0;
+    }
+    .btn {
+      width: 100%;
+    }
+  }
+
 }

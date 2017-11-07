@@ -14,20 +14,315 @@
 
     <div class="page__content">
 
-      @@include('blocks/page-header/page-header.html')
+      <header class="page-header" role="banner">
 
-      <main role="main">
+        <div class="page__wrap">
 
-        <h1>NTH start project</h1>
+          <a href="/" class="logo">
+            <img src="img/logo.svg" alt="logo">
+          </a>
 
-        <p><a href="blocks-demo.html">Страница с демкой компонентов</a></p>
+          <ul class="page__nav">
+            <li><a href="#">Пакеты обслуживания</a></li>
+            <li><a href="#">Этапы работы</a></li>
+            <li><a href="#">Для ресторатора</a></li>
+            <li><a href="#">Для скачивания</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
 
-      </main>
+        </div>
+
+      </header>
+
+      <div class="top" style="background-image: url(img/top-bg.jpg);">
+        <div class="page__wrap">
+          <div class="top__inner">
+            <div class="top__inner-text">
+              <h1 class="top__title">Управляете рестораном или кафе?</h1>
+              <ul class="top__list">
+                <li class="top__list-item"><span>У вас нет понимания в плюсе ли ваш бизнес?</span></li>
+                <li class="top__list-item"><span>Некому делать инвентеризацию по остаткам?</span></li>
+                <li class="top__list-item"><span>Вам некогда разбираться с бумажками?</span></li>
+                <li class="top__list-item"><span>Сломалась касса и некому позвонить?</span></li>
+              </ul>
+            </div>
+            <div class="top__inner-form">
+              <form action="" class="form form--feedbeck-top">
+                <fieldset>
+                  <legend>Доверьте нас решение всех проблем с <span>документооборотом</span> и <span>учетом</span></legend>
+                  <label class="field-text">
+                    <span class="field-text__input-wrap">
+                      <input class="field-text__input" type="text" placeholder="Имя">
+                    </span>
+                  </label>
+                  <label class="field-text">
+                    <span class="field-text__input-wrap">
+                      <input class="field-text__input" type="text" placeholder="Телефон">
+                    </span>
+                  </label>
+                  <div class="field-actions">
+                    <button class="btn btn--main">Отправить заявку</button>
+                    <div class="field-actions__text">Отправляя заявку вы соглашаетесь на обработку
+                    персональных данных. <a href="#">Политика конфиденциальности</a></div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page__section page__section--pricing">
+        <div class="page__wrap">
+
+          <div class="section-header">
+            <h2 class="l-title">Пакеты обслуживания</h2>
+          </div>
+
+          <div class="pricing__wrap">
+            <div class="pricing-card pricing-card--one">
+              <div class="pricing-card__wrap">
+                <div class="pricing-card__header">
+                  <div class="pricing-card__name">Базовый</div>
+                  <div class="pricing-card__cost">от 700 руб</div>
+                  <div class="pricing-card__time">в месяц</div>
+                </div>
+                <div class="pricing-card__body">
+                  <ul class="pricing-card__list">
+                    <li>Все услуги базового пакета</li>
+                    <li>Контроль представительских расходов</li>
+                    <li>Ввод результатов Инветаризации оборудования и посуды</li>
+                    <li>Работа с системой ЕГАИС (Подтверждение, Списание, Отчет о вскрытии)</li>
+                    <li>Сдача отчетности в ФСРАР (Декларант)</li>
+                    <li>Сдача налоговой отчетности по организации в ФНС (только декларации, и платежи в фонды за ИП)</li>
+                    <li>Организация архива бухгалтерских документов (папки по видам документов)</li>
+                  </ul>
+                </div>
+                <div class="pricing-card__action">
+                  <a href="#" class="btn btn--rounded">Оставить заявку</a>
+                </div>
+              </div>
+            </div>
+            <div class="pricing-card pricing-card--two">
+              <div class="pricing-card__wrap">
+                <div class="pricing-card__header">
+                  <div class="pricing-card__name">Базовый</div>
+                  <div class="pricing-card__cost">от 700 руб</div>
+                  <div class="pricing-card__time">в месяц</div>
+                </div>
+                <div class="pricing-card__body">
+                  <ul class="pricing-card__list">
+                    <li>Все услуги базового пакета</li>
+                    <li>Контроль представительских расходов</li>
+                    <li>Ввод результатов Инветаризации оборудования и посуды</li>
+                    <li>Работа с системой ЕГАИС (Подтверждение, Списание, Отчет о вскрытии)</li>
+                    <li>Сдача отчетности в ФСРАР (Декларант)</li>
+                    <li>Сдача налоговой отчетности по организации в ФНС (только декларации, и платежи в фонды за ИП)</li>
+                    <li>Организация архива бухгалтерских документов (папки по видам документов)</li>
+                  </ul>
+                </div>
+                <div class="pricing-card__action">
+                  <a href="#" class="btn btn--rounded">Оставить заявку</a>
+                </div>
+              </div>
+            </div>
+            <div class="pricing-card pricing-card--three">
+              <div class="pricing-card__wrap">
+                <div class="pricing-card__header">
+                  <div class="pricing-card__name">Базовый</div>
+                  <div class="pricing-card__cost">от 700 руб</div>
+                  <div class="pricing-card__time">в месяц</div>
+                </div>
+                <div class="pricing-card__body">
+                  <ul class="pricing-card__list">
+                    <li>Все услуги базового пакета</li>
+                    <li>Контроль представительских расходов</li>
+                    <li>Ввод результатов Инветаризации оборудования и посуды</li>
+                    <li>Работа с системой ЕГАИС (Подтверждение, Списание, Отчет о вскрытии)</li>
+                    <li>Сдача отчетности в ФСРАР (Декларант)</li>
+                    <li>Сдача налоговой отчетности по организации в ФНС (только декларации, и платежи в фонды за ИП)</li>
+                    <li>Организация архива бухгалтерских документов (папки по видам документов)</li>
+                  </ul>
+                </div>
+                <div class="pricing-card__action">
+                  <a href="#" class="btn btn--rounded">Оставить заявку</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="page__section page__section--stages">
+        <div class="page__wrap">
+
+          <div class="section-header">
+            <h2 class="s-title">Этапы работы</h2>
+          </div>
+
+          <div class="stage__wrap">
+
+            <div class="stage">
+              <div class="stage__caption">
+                <div class="stage__num">1 Этап</div>
+                <div class="stage__title">Визит на объект, анализ текущей ситуации</div>
+                <div class="stage__text">
+                  В некотором царстве, в некотором государстве жил-был богатый купец, именитый человек. Много у него было всякого богатства, дорогих товаров заморских, жемчугу, драгоценных камениев, золотой и серебряной казны; и было у того купца три дочери, все три красавицы писаные.
+                </div>
+              </div>
+              <div class="stage__image" style="background-image: url(img/stage-demo-image.jpg);"></div>
+            </div>
+            <div class="stage">
+              <div class="stage__caption">
+                <div class="stage__num">1 Этап</div>
+                <div class="stage__title">Визит на объект, анализ текущей ситуации</div>
+                <div class="stage__text">
+                  В некотором царстве, в некотором государстве жил-был богатый купец, именитый человек. Много у него было всякого богатства, дорогих товаров заморских, жемчугу, драгоценных камениев, золотой и серебряной казны; и было у того купца три дочери, все три красавицы писаные.
+                </div>
+              </div>
+              <div class="stage__image" style="background-image: url(img/stage-demo-image.jpg);"></div>
+            </div>
+            <div class="stage">
+              <div class="stage__caption">
+                <div class="stage__num">1 Этап</div>
+                <div class="stage__title">Визит на объект, анализ текущей ситуации</div>
+                <div class="stage__text">
+                  В некотором царстве, в некотором государстве жил-был богатый купец, именитый человек. Много у него было всякого богатства, дорогих товаров заморских, жемчугу, драгоценных камениев, золотой и серебряной казны; и было у того купца три дочери, все три красавицы писаные.
+                </div>
+              </div>
+              <div class="stage__image" style="background-image: url(img/stage-demo-image.jpg);"></div>
+            </div>
+            <div class="stage">
+              <div class="stage__caption">
+                <div class="stage__num">1 Этап</div>
+                <div class="stage__title">Визит на объект, анализ текущей ситуации</div>
+                <div class="stage__text">
+                  В некотором царстве, в некотором государстве жил-был богатый купец, именитый человек. Много у него было всякого богатства, дорогих товаров заморских, жемчугу, драгоценных камениев, золотой и серебряной казны; и было у того купца три дочери, все три красавицы писаные.
+                </div>
+              </div>
+              <div class="stage__image" style="background-image: url(img/stage-demo-image.jpg);"></div>
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="page__section page__section--news">
+        <div class="page__wrap">
+
+          <div class="section-header">
+            <h2 class="s-title">Интересно для ресторатора</h2>
+            <p class="s-caption">Только самые интересные новости ресторанной индустрии</p>
+          </div>
+
+          <div class="owl-carousel" id="news-carousel">
+            <div class="news__item">
+              <div class="news__image" style="background-image: url(img/news-demo-image.jpg);"></div>
+              <div class="news__caption">
+                <div class="news__title">«Сладкий» бизнес – шоколадный фонтан!</div>
+                <p class="news__text">Сколько же споров было в своё время о пользе и вреде шоколада. Но сейчас научно доказано, что шоколад полезен! Интерес во всём мире к шоколаду не случаен, так как какао-бобы содержат полифенолы. Они являются антиоксидантами, обладают антибактериальными свойствами, противовоспалительным эффектом. Кроме того, шоколад – замечательное средство от депрессии. Флаванол, который содержится в тёмном шоколаде, увеличивает содержание кислорода в клетках головного мозга, замедляет процессы старения, борется с хронической усталостью и нарушениями сна. Очень полезен горячий шоколад, с определённым составом какао-порошка, какао-масла и какао-бобов.</p>
+              </div>
+            </div>
+            <div class="news__item">
+              <div class="news__image" style="background-image: url(img/news-demo-image.jpg);"></div>
+              <div class="news__caption">
+                <div class="news__title">«Сладкий» бизнес – шоколадный фонтан!</div>
+                <p class="news__text">Сколько же споров было в своё время о пользе и вреде шоколада. Но сейчас научно доказано, что шоколад полезен! Интерес во всём мире к шоколаду не случаен, так как какао-бобы содержат полифенолы. Они являются антиоксидантами, обладают антибактериальными свойствами, противовоспалительным эффектом. Кроме того, шоколад – замечательное средство от депрессии. Флаванол, который содержится в тёмном шоколаде, увеличивает содержание кислорода в клетках головного мозга, замедляет процессы старения, борется с хронической усталостью и нарушениями сна. Очень полезен горячий шоколад, с определённым составом какао-порошка, какао-масла и какао-бобов.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="page__section page__section--blanks">
+        <div class="page__wrap">
+
+          <div class="section-header">
+            <h2 class="s-title">Бланки для скачивания</h2>
+          </div>
+
+          <div class="owl-carousel" id="blank-carousel">
+
+            <div class="blank__item">
+              <div class="blank__icon"></div>
+              <div class="blank__name">Название бланка в две строки</div>
+            </div>
+            <div class="blank__item">
+              <div class="blank__icon"></div>
+              <div class="blank__name">Название бланка в две строки</div>
+            </div>
+            <div class="blank__item">
+              <div class="blank__icon"></div>
+              <div class="blank__name">Название бланка в две строки</div>
+            </div>
+            <div class="blank__item">
+              <div class="blank__icon"></div>
+              <div class="blank__name">Название бланка в две строки</div>
+            </div>
+            <div class="blank__item">
+              <div class="blank__icon"></div>
+              <div class="blank__name">Название бланка в две строки</div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="page__section page__section--feedback">
+        <div class="page__wrap">
+
+          <div class="section-header">
+            <h2 class="s-title">Организуем ваш учет. Первый месяц бесплатно!</h2>
+            <p class="s-caption">Для получения подробной информации звоните нам по тел.: +7 111 111 111 11 11 или оставьте заявку</p>
+          </div>
+
+          <form action="" class="form form--feedbeck-bottom">
+              <label class="field-text form__part">
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" placeholder="Имя">
+                </span>
+              </label>
+              <label class="field-text form__part">
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" placeholder="Телефон">
+                </span>
+              </label>
+              <div class="field-actions form__part">
+                <button class="btn btn--main">Отправить заявку</button>
+              </div>
+          </form>
+        </div>
+      </div>
 
     </div>
 
     <div class="page__footer-wrapper">
-      @@include('blocks/page-footer/page-footer.html')
+
+      <footer class="page-footer" role="contentinfo">
+
+        <div class="page__wrap">
+
+          <a href="/" class="logo">
+            <img src="img/logo2.svg" alt="logo">
+          </a>
+
+          <ul class="page__nav page__nav--bottom">
+            <li><a href="#">Пакеты обслуживания</a></li>
+            <li><a href="#">Этапы работы</a></li>
+            <li><a href="#">Для ресторатора</a></li>
+            <li><a href="#">Для скачивания</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+
+        </div>
+
+      </footer>
+
     </div>
 
   </div>

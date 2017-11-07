@@ -33,6 +33,68 @@
   &__footer-wrapper {
     flex-shrink: 0;
   }
+
+  &__wrap {
+    @include container;
+  }
+
+  &__section {
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    &--pricing {
+      background: #f0f0f0;
+    }
+
+    &--news {
+      background-image: url(../img/news-bg.jpg);
+      background-repeat: repeat;
+    }
+
+    &--feedback {
+      position: relative;
+      padding: 55px 0;
+      color: #fff;
+      background-image: url(../img/feedback-bg.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center center;
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.7);
+      }
+      .page__wrap {
+        position: relative;
+        z-index: 2;
+      }
+      .section-header {
+        margin-bottom: 40px;
+      }
+    }
+
+  }
+
+  &__nav {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    li {}
+    a {
+      color: #fff;
+      display: block;
+      text-decoration: none;
+    }
+    &--bottom {
+      a {
+        color: #000;
+      }
+    }
+  }
 }
 
 *,

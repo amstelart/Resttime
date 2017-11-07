@@ -1,0 +1,56 @@
+// В этом файле должны быть стили для БЭМ-блока stage, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.stage {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: flex-end;
+  margin-bottom: 60px;
+
+  &__wrap {
+  }
+
+  &__caption {
+    background: #fff;
+    border: 6px solid #dcdcdc;
+    padding: 35px;
+    line-height: 1.4;
+    position: absolute;
+    left: 0;
+    width: 65%;
+  }
+  &__num {
+    color: #86c005;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  &__title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  &__text {
+    line-height: 1.6;
+  }
+  &__image {
+    min-height: 450px;
+    min-width: 620px;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  &:nth-child(even) {
+    justify-content: flex-start;
+    #{$block-name}__caption {
+      right: 0;
+      left: inherit;
+    }
+  }
+
+}

@@ -5,4 +5,16 @@
 .page-footer {
 
   $block-name:                &; // #{$block-name}__element
+
+  padding: 35px 0;
+
+  .logo {
+
+  }
+  
+  .page__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
 }

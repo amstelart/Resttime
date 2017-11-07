@@ -55,7 +55,12 @@
     "close": [],
     "tabs": [],
     "object-fit-polyfill": [],
-    "embed-responsive": []
+    "embed-responsive": [],
+    "top": [],
+    "pricing": [],
+    "stage": [],
+    "news": [],
+    "blank": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

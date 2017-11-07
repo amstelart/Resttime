@@ -5,4 +5,17 @@
 .page-header {
 
   $block-name:                &; // #{$block-name}__element
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 40px;
+  z-index: 10;
+
+  .page__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
 }

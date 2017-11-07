@@ -1,0 +1,101 @@
+// В этом файле должны быть стили для БЭМ-блока pricing, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.pricing {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__wrap {
+    @include row;
+  }
+
+}
+
+.pricing-card {
+
+  $block-name:                &; // #{$block-name}__element
+
+  @include make-col(4);
+
+  &__wrap {
+    box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  &__header {
+    text-align: center;
+    background: #fff;
+    line-height: 1.4;
+    padding: 40px 20px 30px 20px;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 6px;
+    }
+  }
+  &__name {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &__cost {
+    font-size: 18px;
+    color: #a2a2a2;
+    font-weight: 700;
+  }
+  &__time {
+    color: #a2a2a2;
+  }
+  &__body {
+    background: #fff;
+  }
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+
+      padding: 8px 15px 8px 30px;
+
+      &:nth-child(even) {
+        background: #f6f6f6;
+      }
+    }
+  }
+  &__action {
+    background: #fff;
+    padding: 30px;
+    .btn {
+      width: 100%;
+    }
+  }
+
+  &--one {
+    #{$block-name}__header {
+      &:before {
+        background: linear-gradient(to right, #8bdf04 0%,#fff200 100%);
+      }
+    }
+  }
+  &--two {
+    #{$block-name}__header {
+      &:before {
+        background: #fff600;
+        background: linear-gradient(left, #fff600 0%, #ea8c05 100%);
+      }
+    }
+  }
+  &--three {
+    #{$block-name}__header {
+      &:before {
+        background: #fff600;
+        background: linear-gradient(left, #ea8c05 0%, #ea0505 100%);
+      }
+    }
+  }
+
+}
