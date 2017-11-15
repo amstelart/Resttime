@@ -19,7 +19,7 @@ $border-radius:               0;
   $block-name:                &; // #{$block-name}__element
 
   display: block;
-  margin-bottom: ($line-height / 2);
+  margin-bottom: 25px;
 
   &__name {
     display: block;

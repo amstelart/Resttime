@@ -16,7 +16,13 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  @include make-col(4);
+  @include make-col(12);
+  margin-bottom: 25px;
+
+  @media (min-width: $screen-lg) {
+    @include make-col(4);
+    margin-bottom: 0;
+  }
 
   &__wrap {
     box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.1);

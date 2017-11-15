@@ -58,7 +58,10 @@ $line-height:                 1.375em !default;
     margin: auto;
 
     .form__part {
-      @include make-col(4);
+      @include make-col(12);
+      @media (min-width: $screen-lg) {
+        @include make-col(4);
+      }
     }
     .field-actions {
       margin: 0;
