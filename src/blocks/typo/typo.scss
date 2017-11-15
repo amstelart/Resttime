@@ -369,6 +369,9 @@ pre {
 .section-header {
   text-align: center;
   margin-bottom: 3.5em;
+  @media (max-width: $screen-lg - 1) {
+    margin-bottom: 2em;
+  }
 }
 
 .l-title {
@@ -378,4 +381,7 @@ pre {
 .s-title {
   font-size: 30px;
   font-weight: 500;
+  @media (max-width: $screen-lg - 1) {
+    margin-top: 20px;
+  }
 }

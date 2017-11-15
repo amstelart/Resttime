@@ -16,6 +16,8 @@
     min-width: 400px;
     padding-bottom: 20%;
     margin-right: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   &__title {
     font-size: 18px;
@@ -24,5 +26,15 @@
   &__text {
     font-size: 14px;
     line-height: 24px;
+  }
+  @media (max-width: $screen-lg - 1) {
+    &__item {
+      flex-direction: column;
+    }
+    &__image {
+      min-width: 100%;
+      padding-bottom: 40%;
+      margin-bottom: 30px;
+    }
   }
 }

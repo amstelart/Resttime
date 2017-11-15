@@ -59,8 +59,8 @@
       color: #fff;
       background-image: url(../img/feedback-bg.jpg);
       background-size: cover;
-      background-attachment: fixed;
-      background-position: center center;
+      // background-attachment: fixed;
+      background-position: center 20%;
       &:before {
         content: "";
         position: absolute;
@@ -85,6 +85,7 @@
     list-style: none;
     display: flex;
     padding: 0;
+
     li {
       &:not(:first-child) {
         margin-left: 25px;
@@ -99,6 +100,7 @@
         color: #8bdf04;
       }
     }
+
     &--bottom {
       display: none;
       a {

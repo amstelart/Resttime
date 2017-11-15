@@ -1,3 +1,8 @@
+
+// =================================
+// ИНИЦИАЛИЗАЦИИ БИБЛИОТЕК И ПРОЧЕЕ
+// =================================
+
 // Если на проекте jQuery
 $( document ).ready(function() {
 
@@ -6,8 +11,7 @@ $( document ).ready(function() {
       nav: true,
       dots: false,
       loop: true,
-      navText: ['<svg width="100%" height="100%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 1px;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>', '<svg width="100%" height="100%" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 1px;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'],
-      center: true
+      navText: ['<svg width="100%" height="100%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 1px;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>', '<svg width="100%" height="100%" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 1px;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>']
     });
 
     $("#blank-carousel").owlCarousel({
@@ -46,18 +50,15 @@ $( document ).ready(function() {
 });
 
 /*START MENU JS*/
-   if ($(window).scrollTop() > 200) {
-          $('.fixed-top').addClass('menu-bg');
-      } else {
-          $('.fixed-top').removeClass('menu-bg');
-      }
-  $(window).on('scroll', function(){
-    if ( $(window).scrollTop() > 70 ) {
-      $('.page-header').addClass('page-header--sticky');
-    } else {
-      $('.page-header').removeClass('page-header--sticky');
+$(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+    if (scroll > 0) {
+        $('.page-header').addClass('page-header--sticky');
     }
-  });
+    if (scroll <= 0) {
+        $('.page-header').removeClass('page-header--sticky');
+    }
+});
 /*END MENU JS*/
 
 jQuery(document).ready(function($){
@@ -80,16 +81,6 @@ jQuery(document).ready(function($){
         smoothScroll($(this.hash));
     });
 
-    //open-close navigation on touch devices
-    $('.touch .cd-nav-trigger').on('click', function(){
-    	$('.touch #cd-vertical-nav').toggleClass('open');
-
-    });
-    //close navigation on touch devices when selectin an elemnt from the list
-    $('.touch #cd-vertical-nav a').on('click', function(){
-    	$('.touch #cd-vertical-nav').removeClass('open');
-    });
-
 	function updateNavigation() {
 		contentSections.each(function(){
 			$this = $(this);
@@ -108,7 +99,30 @@ jQuery(document).ready(function($){
     	600
     );
 	}
+
+
+  // Добавление/удаление модификаторов при клике на переключение видимости
+  var toggler = document.getElementById('main-nav-toggler');
+  if(toggler){
+    toggler.addEventListener('click', mainNavVisibleToggle);
+
+    function mainNavVisibleToggle(e) {
+      e.preventDefault();
+      toggler.classList.toggle('burger--close'); // модификатор иконки (должен быть .burger)
+      document.getElementById('cd-nav').classList.toggle('top-nav--open');
+    }
+  }
+
+  //close navigation on touch devices when selectin an elemnt from the list
+  $('#cd-nav a').on('click', function(){
+    $('#cd-nav').removeClass('top-nav--open');
+    toggler.classList.toggle('burger--close');
+  });
+
+
 });
+
+
 
 
 // Изоляция без jQuery

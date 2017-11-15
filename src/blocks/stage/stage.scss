@@ -22,13 +22,14 @@
   &__caption {
     background: #fff;
     border: 6px solid #dcdcdc;
-    padding: 35px;
+    padding: 20px;
     line-height: 1.4;
     // bottom:0;
     @media (min-width: $screen-lg) {
       position: absolute;
       left: 0;
       width: 65%;
+      padding: 35px;
       bottom: inherit;
     }
   }
@@ -47,7 +48,8 @@
     line-height: 1.6;
   }
   &__image {
-    min-height: 450px;
+    // min-height: 450px;
+    padding-bottom: 60%;
     min-width: 100%;
     background-size: cover;
     background-position: center center;

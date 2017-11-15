@@ -43,6 +43,9 @@ $line-height:                 1.375em !default;
     legend {
       font-size: 18px;
       font-weight: 400;
+      @media (max-width: $screen-lg - 1 ) {
+        font-size: 16px;
+      }
       span {
         color: #8bdf04;
       }

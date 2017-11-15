@@ -5,7 +5,6 @@
     "typo": [],
     "page-header": [],
     "page-footer": [],
-    "main-nav": [],
     "logo": [],
     "btn": [],
     "sprite-svg": [],
@@ -43,11 +42,6 @@
     "table-responsive": [],
     "table-mobile-scroll": [],
     "owl-carousel": [],
-    "swipe": [],
-    "pagination": [],
-    "breadcrumbs": [],
-    "nouislider": [],
-    "off-canvas": [],
     "burger": [],
     "progress": [],
     "media": [],
@@ -60,14 +54,14 @@
     "pricing": [],
     "stage": [],
     "news": [],
-    "blank": []
+    "blank": [],
+    "top-nav": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
     "./src/scss/mixins.scss",
     "./src/scss/functions.scss",
-    "../../node_modules/owl.carousel/dist/assets/owl.carousel.css",
-    "../../node_modules/nouislider/distribute/nouislider.css"
+    "../../node_modules/owl.carousel/dist/assets/owl.carousel.css"
   ],
   "addCssAfter": [
     "./src/scss/print.scss"
@@ -81,8 +75,6 @@
     "./node_modules/svg4everybody/dist/svg4everybody.js",
     "./node_modules/ismobilejs/isMobile.min.js",
     "./node_modules/owl.carousel/dist/owl.carousel.js",
-    "./node_modules/swipejs/build/swipe.min.js",
-    "./node_modules/nouislider/distribute/nouislider.js",
     "./node_modules/object-fit-images/dist/ofi.js"
   ],
   "addJsAfter": [
